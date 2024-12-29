@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <h2>Registered Users</h2>
+<ul>
+  <% users.forEach(user => { %>
+    <li><%= user.username %> <a href="/admin/logs/<%= user._id %>">View Logs</a></li>
+  <% }) %>
+</ul>
+
+</body>
+</html>
